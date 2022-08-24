@@ -1,52 +1,38 @@
 /*Screens for 768px to 1199px*/
-@media (min-width:768px) and (max-width: 1199px){
+@media (min-width:911px) and (max-width: 1199px){
     
     .container-grid{
         grid-template-rows: 10% auto 3%;
     }
 
     /*Home Queries*/
-    .presentation{
-        justify-content: flex-end;
-    }
     .presentation__title{
-        width: 400px;
-        font-size: 4rem;
+        width: 40%;
     }
     .presentation__paragraph{
-        width: 400px;
-        display: flex;
-        align-items: flex-end;
-        padding: 10px;
-        font-size: 1.3rem;
+        width: 40%;
     }
 
     /*AboutMe Queries*/
-
-
     .container__aboutMe{
-        justify-content: space-evenly;
-        align-items: center;
         height: 100%;
         margin-top: 40px;
-
     }
 
     .me{
         margin-left: 30px;
-        height: auto;
         width: 50%;
     }
     .me .me__txt p{
-        padding: 15px;
-    }
-    .me__video iframe{
         padding: 15px;
     }
 
     .resume{
         height: 100%;
         width: 50%;
+    }
+    .resume__video{
+        width: 80%;
     }
 
     .container__cv p{
@@ -59,7 +45,7 @@
     /*MySkill Queries*/
     .containerSkills{
         height: 100%;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .education{
@@ -67,7 +53,8 @@
         margin-left: 30px;
     }
     .education__description p{ 
-        padding: 12px;
+        padding: 10px;
+        line-height: 1.5rem;
     }
 
     .education__certifications h3{
@@ -80,6 +67,10 @@
         height: 100%;
         padding: 0;
         margin-top: 40px;
+    }
+    
+    .portfolioPresentation{
+        width: 75%;
     }
     .proyect{
         justify-content: center;
@@ -112,9 +103,64 @@
     }
 }
 
+@media (min-width:768px) and (max-width:911px){
+    .presentation__title{
+        width: 50%;
+    }
+    .presentation__paragraph{
+        height: auto;
+        width: 50%;
+    }
+
+    .container__aboutMe{
+        margin-top: 30px;
+    }
+    
+
+    .me .me__txt p{
+        padding: 12px;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    
+    .resume__video{
+        width: 360px;
+    }
+    .container__cv p{
+        width: 300px;
+    }
+
+    .containerSkills{
+        height: 100%;
+        margin-top: 10px;
+    }
+    .education__description p{ 
+        padding: 10px;
+        line-height: 1.5rem;
+    }
+    
+    .containerPortfolio{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 0px;
+    }
+
+    .portfolioPresentation{
+        width: 90%;
+        line-height: 1.5rem;
+    }
+
+    .proyect p{
+        height: 150px;
+        width: 100%;
+    }
+}
+
+
 /*Screens for 375px to 767px*/
 @media (min-width:375px) and (max-width:767px){
-
+    
     
     body{
         overflow: scroll;
@@ -221,6 +267,7 @@
     /*Footer*/
     #footer{
         grid-column:0;
+        height: 30px;
         font-size: 0.8rem;
         align-items: flex-end;
         justify-content: center;
@@ -228,19 +275,19 @@
     
     /*Home*/
     .presentation{
-        height: auto;
         align-items: center;
         justify-content: center;
     }
     .presentation__title{
         margin-top: 25px;
-        height: 50%;
+        height: auto;
         width: 60%;
         font-size: 4.5rem;
         text-align: center;
     }
     .presentation__paragraph{
-        width: 70%;
+        height: auto;
+        width: 60%;
         font-size: 1.5rem;
         padding: 10px;
     }
@@ -257,38 +304,28 @@
     .container__aboutMe{
         height: auto;
         display: flex;
-        justify-content: flex-start;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 60px;
     }
     
     .me{
-        height: auto;
         width: 100%;
-        justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .me .me__txt p{
-        height: 100%;
-        width: 100%;
         padding: 20px;
-    }
-    .me__video iframe{
-        height: 250px;
-        width: 450px;
-        padding: 0;
     }
     
     .resume{
         width: 100%;
     }
+    .resume__video{
+        width: 450px;
+    }
     
     /*MySkill*/
     .containerSkills{
         margin-top: 55px;
-        height: auto;
-        display: flex;
         flex-direction: column;
         padding: 10px;
     }
@@ -300,55 +337,14 @@
     }
     
     .education__certifications{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding: 10px;
     }
     
     .skills{
-        height: 220px;
+        height: 250px;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .skills__front{
-        height: auto;
-    }
-    .skills__front h3{
-        padding: 10px;
-        text-decoration: underline;
-        text-align: center;
-    }
-    .skills__front p{
-        font-size: 1rem;
-    }
-    
-    .skills__back{
-        height: auto;
-    }
-    .skills__back h3{
-        padding: 10px;
-        text-decoration: underline;
-        text-align: center;
-    }
-    .skills__back p{
-        font-size: 1rem;
-    }
-    
-    .skills__others{
-        height: auto;
-    }
-    .skills__others h3{
-        padding: 10px;
-        text-decoration: underline;
-        text-align: center;
-    }
-    .skills__others p{
-        font-size: 1rem;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
     }
     
     /*Portfolio*/
@@ -356,7 +352,16 @@
         flex-direction: column;
         padding: 10px;
         margin-top: 50px;
-
+    }
+    .portfolioPresentation{
+        width: 70%;
+        line-height: 1.5rem;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .proyects{
+        display: flex;
+        flex-direction: column;
     }
     .proyect{
         width: 100%;

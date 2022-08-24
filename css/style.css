@@ -64,19 +64,33 @@ body{
     text-decoration: none;
 }
 #active, .navbar__link:hover{
-    color: red;
+    color: #428f75;
     transition: .3s;
 }
 
+/*Navbar Mobile*/
 #check{
     display: none;
 }
 .fa-solid.fa-bars{
     display: none;
 }
-
 .icons-menu{
     display: none;
+}
+
+/*Subtitle pages*/
+.title__sub{
+    display: none;
+    font-size: 2rem;
+    margin-left: 70px;
+    position: relative;
+    top: 62px;
+}
+
+/*First Letter pages*/
+.first{
+    font-size: 3rem;
 }
 /*Main*/
 #main{
@@ -136,46 +150,34 @@ body{
     justify-content: flex-end;
 }
 .presentation__title{
-    width: 40%;
-    font-size: 75px;
+    width: 35%;
+    font-size: 5rem;
 }
 .presentation__paragraph{
-    width: 40%;
-    font-size: 21px;
+    height: 25%;
+    width: 35%;
+    font-size:1.3rem;
+    line-height: 1.8rem;
 }
 
 /*AboutMe*/
-
-.title__sub{
-    display: none;
-    font-size: 2rem;
-    margin-left: 70px;
-    position: relative;
-    top: 62px;
-}
-
 .container__aboutMe{
     display: flex;
     justify-content: space-around;
     height: auto;
     width: 100%;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .me{
-    height: 400px;
+    height: auto;
     width: 40%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
 }
 .me .me__txt p{
     width: auto;
     padding: 10px;
-}
-.me__video iframe{
-    height: 250px;
-    width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
 }
 
 .resume{
@@ -184,6 +186,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.resume__video{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 35px;
 }
 .container__cv{
     margin-bottom: 20px;
@@ -205,14 +212,14 @@ body{
     margin-left: 10px;
 }
 .resume .container__cv i:hover{
-    color:#e6b218;
+    color:#428f75;
 }
 
 /*MySkill*/
 .containerSkills{
     height: auto;
     display: flex;
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 .education{
@@ -226,6 +233,7 @@ body{
 }
 .education__description p{ 
     padding: 10px;
+    line-height: 1.8rem;
 }
 
 .education__certifications{
@@ -247,7 +255,7 @@ body{
     color: black;
 }
 .education__certifications ul li a:hover{
-    color: blue;
+    color: #428f75;
 }
 
 .skills{
@@ -297,22 +305,34 @@ body{
 /*Portfolio*/
 .containerPortfolio{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
     margin-top: 90px;
 }
+
+.portfolioPresentation{
+    width: 60%;
+    line-height: 1.8rem;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.proyects{
+    display: flex;
+}
 .proyect{
     height: auto;
-    width: 30%;
+    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-}
+    align-items: center;}
 .proyect img{
-    height: auto;
+    height: 250px;
+    width: 80%;
 }
 .proyect p{
-    height: auto;
+    height: 100%;
+    width: 80%;
     padding: 15px;
 }
 
