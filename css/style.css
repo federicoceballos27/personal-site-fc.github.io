@@ -202,7 +202,8 @@ body{
     margin-left: 10px;
 }
 .resume .container__cv i:hover{
-    color:#428f75;
+    background-color:#428f75;
+    transform: rotate(90deg);
 }
 
 /*MySkill*/
@@ -321,7 +322,6 @@ body{
     height: 250px;
     width: 80%;
     box-shadow: 9px 10px 20px 0px;
-
 }
 .proyect p{
     height: 100%;
