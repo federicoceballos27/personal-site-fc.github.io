@@ -363,6 +363,7 @@ body{
     margin-bottom: 10px;
     text-decoration: underline;
 }
+
 .form__field{
     background: silver;
     border: 1px solid #393939;
@@ -372,6 +373,11 @@ body{
     margin-bottom: 10px;
     padding: 5px;
 }
+
+.form__field:focus{
+    background-color: yellow;
+}
+
 .form__check{
     margin-bottom: 5px;
 }
