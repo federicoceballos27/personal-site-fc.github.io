@@ -202,7 +202,8 @@ body{
     margin-left: 10px;
 }
 .resume .container__cv i:hover{
-    color:#428f75;
+    background-color:#428f75;
+    transform: rotate(90deg);
 }
 
 /*MySkill*/
@@ -315,10 +316,12 @@ body{
     width: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+}
 .proyect img{
     height: 250px;
     width: 80%;
+    box-shadow: 9px 10px 20px 0px;
 }
 .proyect p{
     height: 100%;
@@ -363,6 +366,7 @@ body{
     margin-bottom: 10px;
     text-decoration: underline;
 }
+
 .form__field{
     background: silver;
     border: 1px solid #393939;
@@ -371,7 +375,14 @@ body{
     font-size: 0.8rem;
     margin-bottom: 10px;
     padding: 5px;
+    transition: all 1s;
 }
+
+.form__field:focus{
+    background: #7affd3;
+    color: black;
+}
+
 .form__check{
     margin-bottom: 5px;
 }
