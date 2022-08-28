@@ -315,10 +315,13 @@ body{
     width: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+}
 .proyect img{
     height: 250px;
     width: 80%;
+    box-shadow: 9px 10px 20px 0px;
+
 }
 .proyect p{
     height: 100%;
