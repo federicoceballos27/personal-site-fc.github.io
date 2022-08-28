@@ -372,10 +372,12 @@ body{
     font-size: 0.8rem;
     margin-bottom: 10px;
     padding: 5px;
+    transition: all 1s;
 }
 
 .form__field:focus{
-    background-color: yellow;
+    background: #7affd3;
+    color: black;
 }
 
 .form__check{
