@@ -178,85 +178,11 @@
     #header{
         grid-column: 0;
         display: flex;
-        justify-content: space-between;
-        background: #cee3dcc9;
+        background: #cee3dce8;
         position: sticky;
         top: 0;
         z-index: 1;
     }
-    
-    .logo{
-        border: 1px dashed black;
-        border-radius: 50%;
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-bottom: 5px;
-        padding: 10px 20px;
-        text-align: center;
-    }
-    .logo__img{
-        font-size: 3rem;
-    }
-    
-    .navbar{
-        align-items: center;
-        justify-content: flex-end;
-    }
-    
-    .fa-solid.fa-bars{
-        display: flex;
-        align-items: center;
-        font-size: 2.5rem;
-        cursor: pointer;
-        margin-right: 15px;        
-    }
-    
-    #check{
-        display: none;
-    }
-    #check:checked ~ .navbar__ul {
-    left: 0;    
-    }
-    #check:checked ~ .navbar__list{
-        display: block;
-    }
-
-    .navbar__ul{
-        background:#cee3dc;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        top: 100px;
-        left: -100%;
-        transition: all .5s;
-    }
-
-    .navbar__list{
-        line-height: 45px;
-        margin: 10px 0;
-        display: flex;
-        margin-right:0;
-        transition: all .5s;
-    }
-    .navbar__link{
-        color: black;
-        font-size: 1.5rem;
-    }
-
-    .icons-menu{
-        height: 10%;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-left: 20px;
-    }
-    .icons-menu .icon__link{
-        margin-right: 10px;
-    }
-
 
     
     /*Social Media*/

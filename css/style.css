@@ -24,50 +24,20 @@ body{
     display: flex;
 }
 
-.logo{
-    margin-left: 10px;
-    display: flex;
-    align-items: flex-end;
-}
-
 .navbar{
-    display: flex;
     width: 100%;
 }
-.navbar__ul{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; 
-    list-style-type: none;
+ul .nav-item .nav-link{
+    font-size: 1.2rem;
+    color: black;
 }
-.navbar__list{
-    width: auto;
-    display: flex;
-    justify-content: center;
-    margin-right:30px;
-}
-.navbar__link{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    text-decoration: none;
-}
-#active, .navbar__link:hover{
+ul .nav-item .nav-link:hover{
     color: #428f75;
-    transition: .3s;
+}
+ul .nav-item .nav-link.active{
+    color:#428f75;
 }
 
-/*Navbar Mobile*/
-#check{
-    display: none;
-}
-.fa-solid.fa-bars{
-    display: none;
-}
-.icons-menu{
-    display: none;
-}
 
 /*Subtitle pages*/
 .title__sub{
@@ -125,9 +95,7 @@ body{
     grid-column: 1/4;
     color: #777777;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 13px;
-    display: flex;
-    align-items: flex-end;
+    font-size: 0.8rem;
 }
 
 /*Home*/
@@ -156,7 +124,7 @@ body{
     justify-content: space-around;
     height: auto;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .me{
@@ -197,20 +165,20 @@ body{
     
 }
 .resume .container__cv i{
+    height: 50px;
     color: black;
     font-size: 30px;
     margin-left: 10px;
 }
 .resume .container__cv i:hover{
-    background-color:#428f75;
-    transform: rotate(90deg);
+    color:#428f75;
 }
 
 /*MySkill*/
 .containerSkills{
     height: auto;
     display: flex;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .education{
@@ -298,55 +266,24 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 90px;
+    margin-top: 30px;
 }
 
 .portfolioPresentation{
-    width: 60%;
+    width: 80%;
     line-height: 1.8rem;
-    margin-left: 40px;
+    margin-left: 90px;
     padding: 10px;
 }
 
-.proyects{
-    display: flex;
-}
-.proyect{
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.proyect img{
-    height: 250px;
-    width: 80%;
-    box-shadow: 9px 10px 20px 0px;
-}
-.proyect p{
-    height: 100%;
-    width: 80%;
-    padding: 15px;
-}
-
-.arrow_icon .fa-solid.fa-angle-left{
-    font-size: 30px;
-    margin-left: 10px;
-    position: absolute;
-    bottom: 240px;
-}
-.arrow_icon .fa-solid.fa-angle-right{
-    font-size: 30px;
-    margin-left: 10px;
-    position: absolute;
-    bottom: 240px;
-    left: 1305px;
+.carousel-inner .carousel-item img{
+    height: 410px;
 }
 
 /*ContactMe*/
 .container__contact{
     display: flex;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .formulario{
@@ -387,22 +324,13 @@ body{
     margin-bottom: 5px;
 }
 
-.btn__form{
-    background-color: #555555;
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    color: white;
-    display: inline-block;
+.btn-container{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
     margin-top: 10px;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 0.4s;
 }
-.btn__form:hover{
-    background-color: silver;
-    color: black;        
-}
+
 
 .map{
     width: 50%;
