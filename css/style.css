@@ -205,7 +205,6 @@ ul .nav-item .nav-link.active{
 }
 .education__certifications ul{
     list-style-type:square;
-    margin-left: 24px;
 }
 .education__certifications ul li{
     padding: 8px;
@@ -235,6 +234,7 @@ ul .nav-item .nav-link.active{
 }
 .skills__front p{
     font-size: 1rem;
+    text-align: center;
 }
 
 .skills__back{

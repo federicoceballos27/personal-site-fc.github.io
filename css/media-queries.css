@@ -159,7 +159,7 @@
 
 
 /*Screens for 375px to 767px*/
-@media (min-width:375px) and (max-width:767px){
+@media (min-width:375px) and (max-width:992px){
     
     
     body{
@@ -178,12 +178,15 @@
     #header{
         grid-column: 0;
         display: flex;
-        background: #cee3dce8;
+        background: #cee3dcf3;
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
+.navbar .navbar-collapse .navbar-nav{
+    text-align: center;
+}
     
     /*Social Media*/
     #socialMedia{
@@ -219,13 +222,13 @@
     }
     
     /*AboutMe*/     
-    .title__sub{
+    /* .title__sub{
         display: flex;
         font-size:1.5rem;
         margin-left: 20px;
         position: absolute;
         top: 110px;
-    }
+    } */
     
     .container__aboutMe{
         height: auto;

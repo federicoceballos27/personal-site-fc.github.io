@@ -57,10 +57,35 @@
 
 
                 <div class="container__contact animate__animated animate__zoomIn">
-
+                    
                     <section class="formulario">
                         <form class="form" action="#">
-                            <h3 class="form__legend">KEEP IN TOUCH!</h3>
+                            <div class="mb-3 col-6">
+                                <label for="exampleFormControlInput1" class="form-label">Name and Surname</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name Surname">
+                                <label for="exampleFormControlInput1" class="form-label mt-2">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3 col-8">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            
+                            <p class="form__check">Do you want to receive my newsletter?</p>
+                                    
+                            <label for="yes">
+                                <input type="radio" name="newsletter" value="yes" checked>Yes
+                            </label>
+
+                            <label for="no">
+                                <input type="radio" name="newsletter" value="no">No
+                            </label>
+
+                            <div class="btn-container">
+                                <button type="button" class="btn btn-outline-secondary">SUBMIT</button>
+                                <button type="button" class="btn btn-outline-secondary">CLEAR</button>
+                            </div>
+                            <!-- <h3 class="form__legend">KEEP IN TOUCH!</h3>
 
                             <label for="name-surname">
                                 <input  class="form__field" type="text" name="name_surname" placeholder="Name and surname">
@@ -87,7 +112,7 @@
                             <div class="btn-container">
                                 <button type="button" class="btn btn-outline-secondary">SUBMIT</button>
                                 <button type="button" class="btn btn-outline-secondary">CLEAR</button>
-                            </div>
+                            </div> -->
                         </form>
                     </section>
 
