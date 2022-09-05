@@ -6,11 +6,12 @@
 
 body{
     background-image: url("../img/background-g23458254f_1280.jpg");
-    background-size: cover;
+    background-size:cover;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     overflow: hidden;
 }
 
+/* Layout-grid */
 .container-grid{
     height: 100vh;
     display: grid;
@@ -38,6 +39,10 @@ ul .nav-item .nav-link.active{
     color:#428f75;
 }
 
+.icons-nav{
+    display: none;
+}
+
 
 /*Subtitle pages*/
 .title__sub{
@@ -52,11 +57,14 @@ ul .nav-item .nav-link.active{
 .first{
     font-size: 3rem;
 }
+
+
 /*Main*/
 #main{
     height: auto;
     width: auto;
 }
+
 
 /*Social Media*/
 #socialMedia{
@@ -72,12 +80,9 @@ ul .nav-item .nav-link.active{
     justify-content: end;
 }
 
-.icon__link{
-    color: black;
-    text-decoration: none;
-}
 .icon__link i{
-    font-size: 25px;
+    color: black;
+    font-size: 1.7rem;
     margin-top: 12px;
 }
 .icon__link .fa-brands.fa-github:hover{
@@ -98,24 +103,25 @@ ul .nav-item .nav-link.active{
     font-size: 0.8rem;
 }
 
+
 /*Home*/
 .presentation{
     height: 100%;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
 }
 .presentation__title{
-    width: 35%;
+    width: 45%;
     font-size: 5rem;
 }
 .presentation__paragraph{
     height: 25%;
-    width: 35%;
+    width: 45%;
     font-size:1.3rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 
 /*AboutMe*/
@@ -124,12 +130,12 @@ ul .nav-item .nav-link.active{
     justify-content: space-around;
     height: auto;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .me{
-    height: auto;
-    width: 40%;
+    height: 100%;
+    width: 45%;
 }
 .me .me__txt p{
     width: auto;
@@ -139,7 +145,7 @@ ul .nav-item .nav-link.active{
 }
 
 .resume{
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,7 +154,8 @@ ul .nav-item .nav-link.active{
 .resume__video{
     height: 250px;
     width: 100%;
-    margin-bottom: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .container__cv{
     margin-bottom: 20px;
@@ -167,7 +174,7 @@ ul .nav-item .nav-link.active{
 .resume .container__cv i{
     height: 50px;
     color: black;
-    font-size: 30px;
+    font-size: 2.1rem;
     margin-left: 10px;
 }
 .resume .container__cv i:hover{
@@ -178,30 +185,29 @@ ul .nav-item .nav-link.active{
 .containerSkills{
     height: auto;
     display: flex;
-    margin-top: 30px;
+    justify-content: space-evenly;
+    margin-top: 40px;
 }
 
 .education{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-left: 60px;
 }
+
 .education__description{
     height: auto;
 }
 .education__description p{ 
-    padding: 10px;
-    line-height: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 8px;
 }
 
-.education__certifications{
-    padding: 10px;
-}
 .education__certifications h3{
-    font-size: 20px;
-    padding: 8px;
+    font-size: 1.1rem;
     text-decoration: underline;
+    padding: 8px;
 }
 .education__certifications ul{
     list-style-type:square;
@@ -265,19 +271,18 @@ ul .nav-item .nav-link.active{
 .containerPortfolio{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     margin-top: 30px;
 }
 
 .portfolioPresentation{
-    width: 80%;
-    line-height: 1.8rem;
-    margin-left: 90px;
+    width: 90%;
+    line-height: 1.5rem;
+    margin-left: 8px;
     padding: 10px;
 }
 
 .carousel-inner .carousel-item img{
-    height: 410px;
+    height: 400px;
 }
 
 /*ContactMe*/
@@ -287,40 +292,18 @@ ul .nav-item .nav-link.active{
 }
 
 .formulario{
-    height: auto;
+    height: 100%;
     width: 50%;
 
 }
 .form{
-    height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    margin-left: 70px;
-
-}
-.form__legend{
-    margin-bottom: 10px;
-    text-decoration: underline;
-}
-
-.form__field{
-    background: silver;
-    border: 1px solid #393939;
-    border-radius: 5px 5px 5px 5px;
-    color: #333333;
-    font-size: 0.8rem;
-    margin-bottom: 10px;
-    padding: 5px;
-    transition: all 1s;
-}
-
-.form__field:focus{
-    background: #7affd3;
-    color: black;
+    margin-left: 50px;
 }
 
 .form__check{
+    font-weight: bold;
     margin-bottom: 5px;
 }
 
@@ -331,11 +314,9 @@ ul .nav-item .nav-link.active{
     margin-top: 10px;
 }
 
-
 .map{
     width: 50%;
 }
-
 .map h3{
     margin-top: 10px;
     text-align: center;

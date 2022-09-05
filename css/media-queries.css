@@ -1,173 +1,10 @@
-/*Screens for 768px to 1199px*/
-@media (min-width:911px) and (max-width: 1199px){
-    
-    .container-grid{
-        grid-template-rows: 10% auto 3%;
-    }
-
-    /*Home Queries*/
-    .presentation__title{
-        width: 40%;
-    }
-    .presentation__paragraph{
-        width: 40%;
-    }
-
-    /*AboutMe Queries*/
-    .container__aboutMe{
-        height: 100%;
-        margin-top: 40px;
-    }
-
-    .me{
-        margin-left: 30px;
-        width: 50%;
-    }
-    .me .me__txt p{
-        padding: 15px;
-    }
-
-    .resume{
-        height: 100%;
-        width: 50%;
-    }
-    .resume__video{
-        width: 80%;
-    }
-
-    .container__cv p{
-        width: 300px;    
-    }
-    .resume .container__cv i{
-        font-size: 2rem;
-    }
-
-    /*MySkill Queries*/
-    .containerSkills{
-        height: 100%;
-        margin-top: 30px;
-    }
-
-    .education{
-        justify-content: center;
-        margin-left: 30px;
-    }
-    .education__description p{ 
-        padding: 10px;
-        line-height: 1.5rem;
-    }
-
-    .education__certifications h3{
-        font-size: 1.5rem;
-    }
-
-
-    /*Portfolio Queries*/
-    .containerPortfolio{
-        height: 100%;
-        padding: 0;
-        margin-top: 40px;
-    }
-    
-    .portfolioPresentation{
-        width: 75%;
-    }
-    .proyect{
-        justify-content: center;
-    }
-    .arrow_icon .fa-solid.fa-angle-right{
-        bottom: 240px;
-        left: 780px;
-    }
-
-    /*ContactMe Queries*/
-    .container__contact{
-        height: 100%;
-        margin-top: 30px;
-    }
-
-    .formulario{
-        height: auto;
-        width: 50%;
-    }
-    .form{
-        height: 100%;
-        justify-content: center;
-        margin-top: 0;
-        margin-left: 30px;
-
-    }
-
-    .map{
-        padding: 15px;
-    }
-}
-
-@media (min-width:768px) and (max-width:911px){
-    .presentation__title{
-        width: 50%;
-    }
-    .presentation__paragraph{
-        height: auto;
-        width: 50%;
-    }
-
-    .container__aboutMe{
-        margin-top: 30px;
-    }
-    
-
-    .me .me__txt p{
-        padding: 12px;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
-    }
-    
-    .resume__video{
-        width: 360px;
-    }
-    .container__cv p{
-        width: 300px;
-    }
-
-    .containerSkills{
-        height: 100%;
-        margin-top: 10px;
-    }
-    .education__description p{ 
-        padding: 10px;
-        line-height: 1.5rem;
-    }
-    
-    .containerPortfolio{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 0px;
-    }
-
-    .portfolioPresentation{
-        width: 90%;
-        line-height: 1.5rem;
-    }
-
-    .proyect p{
-        height: 150px;
-        width: 100%;
-    }
-}
-
-
 /*Screens for 375px to 767px*/
-@media (min-width:375px) and (max-width:992px){
-    
-    
+@media (max-width:767px) {
     body{
-        overflow: scroll;
+        overflow:visible;
     }
     
     .container-grid{
-        height: 100vh;
         display: flex;
         flex-direction: column;
         grid-template-columns: 0;
@@ -184,9 +21,18 @@
         z-index: 1;
     }
 
-.navbar .navbar-collapse .navbar-nav{
-    text-align: center;
-}
+    .navbar .navbar-collapse .navbar-nav{
+        text-align: center;
+    }
+
+    .icons-nav{
+        display: flex;
+        justify-content: center;
+    }
+    .icons-nav a{
+        margin: 0 15px;
+    }
+
     
     /*Social Media*/
     #socialMedia{
@@ -197,9 +43,12 @@
     #footer{
         grid-column:0;
         height: 30px;
-        font-size: 0.8rem;
-        align-items: flex-end;
+        display: flex;
+        align-items: center;
         justify-content: center;
+    }
+    #footer .copyright{
+        margin-top: 20px;
     }
     
     /*Home*/
@@ -217,18 +66,19 @@
     .presentation__paragraph{
         height: auto;
         width: 60%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding: 10px;
     }
     
     /*AboutMe*/     
-    /* .title__sub{
+    .title__sub{
+        color: #68b89e;
         display: flex;
         font-size:1.5rem;
         margin-left: 20px;
         position: absolute;
         top: 110px;
-    } */
+    }
     
     .container__aboutMe{
         height: auto;
@@ -239,7 +89,7 @@
     
     .me{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .me .me__txt p{
         padding: 20px;
@@ -254,15 +104,15 @@
     
     /*MySkill*/
     .containerSkills{
-        margin-top: 55px;
+        margin-top: 75px;
         flex-direction: column;
-        padding: 10px;
     }
     
     .education{
         align-items: center;
         width: 100%;
         margin-left: 0;
+        padding: 10px;
     }
     
     .education__certifications{
@@ -270,7 +120,6 @@
     }
     
     .skills{
-        height: 250px;
         width: 100%;
         justify-content: space-evenly;
         margin-bottom: 10px;
@@ -278,59 +127,27 @@
     
     /*Portfolio*/
     .containerPortfolio{
-        flex-direction: column;
         padding: 10px;
-        margin-top: 50px;
+        margin-top: 75px;
     }
     .portfolioPresentation{
-        width: 70%;
-        line-height: 1.5rem;
-        margin-left: 10px;
-        padding: 10px;
-    }
-    .proyects{
-        display: flex;
-        flex-direction: column;
-    }
-    .proyect{
         width: 100%;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    .proyect img{
-        width: 80%;
-        padding: 10px;
-    }
-    .proyect p{
-        padding: 10px;
-    }
-    
-    .arrow_icon .fa-solid.fa-angle-left{
-        display: none;
-    }
-    .arrow_icon .fa-solid.fa-angle-right{
-        display: none;
+        margin-left: 0px;
     }
     
     /*ContactMe*/
     .container__contact{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 60px;
+        flex-direction: column-reverse;
+        margin-top: 80px;
         padding: 10px;
     }
     
     .formulario{
         height: auto;
         width: 100%;
-        margin-left: 30px;
-        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-bottom: 0px;
     
-    }
-    .form__legend{
-        width: 100%;
     }
     .form{
         margin-top: 0;
@@ -339,6 +156,97 @@
     
     .map{
         width: 100%;
-        height: auto;
+        height: 350px;
+        margin-bottom: 50px;
     }
+}
+
+
+/*Screens for 768px to 1200px*/
+@media (min-width:768px) and (max-width:1200px){
+
+    /*First Letter pages*/
+    .first{
+        font-size: 2rem;
+    }
+
+    .icons-nav{
+        display: none;
+    }
+    
+    /*Home*/
+    .presentation__title{
+        width: 45%;
+        font-size: 4.5rem;
+    }
+    .presentation__paragraph{
+        width: 45%;
+        line-height: 1.4rem;
+    }
+    
+    /*AboutMe*/
+    .container__aboutMe{
+        height: 100%;
+        margin-top: 15px;
+    }
+    
+    .me{
+        height: auto;
+        width: 45%;
+    }
+    .me .me__txt p{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+    
+    .resume{
+        width: 50%;
+        align-items: stretch;
+    }
+    .resume__video{
+        margin-top: 20px;
+    }
+    .container__cv{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /*MySkill*/
+    .containerSkills{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    
+    .education__description p{ 
+        line-height: 1.2rem;
+        padding: 10px;
+    }
+    
+    .education__certifications h3{
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    .education__certifications ul li{
+        padding: 5px;
+    }
+
+    /*Portfolio*/
+    .containerPortfolio{
+        margin-top: 20px;
+    }
+    
+    .portfolioPresentation{
+        line-height: 1.3rem;
+        margin-left: 30px;
+    }
+
+    /*ContactMe*/
+    .container__contact{
+        margin-top: 40px;
+    }
+
 }
