@@ -1,0 +1,140 @@
+@import "vars";
+@import "home";
+@import "aboutMe";
+@import "mySkills";
+@import "portfolio";
+@import "contactMe";
+
+
+/*Navbar icons*/
+.icons-nav{
+    display: none;
+    .icon__link{
+        i{
+            color: black;
+            font-size: 1.7rem;
+            margin-top: 12px
+        }
+        .fa-brands.fa-github:hover{
+            color: rgb(168, 167, 167);
+        }
+        .fa-solid.fa-envelope:hover{
+            color: red;
+        }
+        .fa-brands.fa-linkedin-in:hover{
+            color: rgb(14, 128, 199);
+        }
+    }
+}
+
+
+/*Subtitle pages*/
+.title__sub{
+    display: none;
+    font-size: 2rem;
+    margin-left: 70px;
+    position: relative;
+    top: 62px;
+}
+
+/*First Letter pages*/
+.first{
+    font-size: 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/background-g23458254f_1280.jpg");
+    background-size: cover;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    overflow: hidden;
+}
+
+/* Layout-grid */
+.container-grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: 12% auto 3%;
+}
+
+/*Header*/
+#header{
+    grid-column: 1/4;
+    display: flex;
+}
+
+.navbar{
+    width: 100%;
+    ul{
+        .nav-item{
+            .nav-link{
+                font-size: 1.2rem;
+                color: black;
+                &:hover{
+                    color: $secondaryColor
+                }
+                &.active{
+                    color: $secondaryColor
+                }
+            }
+            
+        }
+    }
+}
+
+/*Main*/
+#main{
+    height: auto;
+    width: auto;
+}
+
+
+/*Social Media*/
+#socialMedia{
+    height: auto;
+    width: auto;
+}
+
+.icons{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    .icon__link{
+        i{
+            color: black;
+            font-size: 1.7rem;
+            margin-top: 12px
+        }
+        .fa-brands.fa-github:hover{
+            color: rgb(168, 167, 167);
+        }
+        .fa-solid.fa-envelope:hover{
+            color: red;
+        }
+        .fa-brands.fa-linkedin-in:hover{
+            color: rgb(14, 128, 199);
+        }
+    }
+}
+
+/*Footer*/
+#footer{
+    grid-column: 1/4;
+    color: #777777;
+    font: {
+        family:Georgia, 'Times New Roman', Times, serif;
+        size: 0.8rem;
+    }
+}
+
+/*Responsive*/
+@import "responsiveSm";
+@import "responsiveXl";

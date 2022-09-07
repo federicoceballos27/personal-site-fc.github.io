@@ -1,0 +1,96 @@
+/*Screens for 768px to 1200px*/
+@media (min-width:768px) and (max-width:1200px){
+
+    /*First Letter pages*/
+    .first{
+        font-size: 2rem;
+    }
+
+    .icons-nav{
+        display: none;
+    }
+    
+    /*Home*/
+    
+    .presentation {
+        & &__title{
+        width:45%;
+        font-size: 4.5rem;
+        }
+        & &__paragraph{
+            width: 45%;
+            line-height: 1.4rem;
+        }
+    }
+    
+    /*AboutMe*/
+    .container__aboutMe{
+        height: 100%;
+        margin-top: 15px;
+        .me{
+            height: auto;
+            width: 45%;
+            .me__txt{
+                p{
+                font-size: 1.3rem;
+                line-height: 1.3rem;
+                }
+            }
+        }
+        .resume{
+            width: 50%;
+            align-items: stretch;
+            & &__video{
+                margin-top: 20px;
+            }
+            .container__cv{
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+    /*MySkill*/
+    .containerSkills{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        .education{
+            width: 60%;
+            &__description{ 
+                p{
+                line-height: 1.2rem;
+                padding: 10px;
+                }
+            }
+            &__certifications{
+                h3{
+                font-size: 1.3rem;
+                padding: 10px;
+                }
+                ul {
+                    li{
+                    padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+    
+    /*Portfolio*/
+    .containerPortfolio{
+        margin-top: 20px;
+        .portfolioPresentation{
+            line-height: 1.3rem;
+            margin-left: 30px;
+        }
+    }
+
+    /*ContactMe*/
+    .container__contact{
+        margin-top: 40px;
+    }
+}

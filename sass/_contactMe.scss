@@ -1,0 +1,33 @@
+/*ContactMe*/
+.container__contact{
+    display: flex;
+    margin-top: 50px;
+    .formulario{
+        height: 100%;
+        width: 50%;
+        .form{
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            .form__check{
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .btn-container{
+                display: flex;
+                width: 30%;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .map{
+        width: 50%;
+        h3{
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import "vars";
+
+/*MySkill*/
+.containerSkills{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    .education{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        &__description{
+            height: auto;
+            p{ 
+                font-size: 1.3rem;
+                line-height: 1.3rem;
+                padding: 8px;
+            }
+        }
+        &__certifications {
+            h3{
+            font-size: 1.1rem;
+            text-decoration: underline;
+            padding: 8px;
+            }
+            ul{
+                list-style-type:square;
+                li{
+                    padding: 8px;
+                    a{
+                        color: black;
+                        &:hover{
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skills{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .skills__front{
+            height: auto;
+            h3{
+                padding: 10px;
+                text: {
+                    decoration: underline;
+                    align: center;
+                }
+            }
+            .skills__icons{
+                text-align: center;
+                img{
+                    margin: 0 10px;
+                }
+            }
+        }
+        .skills__back{
+            height: auto;
+            h3{
+                padding: 10px;
+                text: {
+                    decoration: underline;
+                    align: center;
+                }
+            }
+            .skills__icons{
+                text-align: center;
+                img{
+                    margin: 0 10px;
+                }
+            }
+        }
+        .skills__others{
+            height: auto;
+            h3{
+                padding: 10px;
+                text: {
+                    decoration: underline;
+                    align: center;
+                }
+            }
+            .skills__icons{
+                text-align: center;
+                img{
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
