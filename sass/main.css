@@ -15,7 +15,16 @@
   height: 25%;
   width: 45%;
   font-size: 1.3rem;
-  line-height: 2rem;
+  line-height: 1.3rem;
+}
+.presentation .presentation__paragraph .botonPrueba {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: sans-serif;
+  border-radius: 25px;
+  color: black;
+  background-color: grey;
 }
 
 /*AboutMe*/
@@ -50,26 +59,41 @@
   width: 100%;
   margin: 25px 0;
 }
-.resume .container__cv {
+.resume .container__cv, .resume .container__cv--color {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.resume .container__cv p {
+.resume .container__cv .parrafo, .resume .container__cv--color .parrafo, .resume .container__cv--color p {
   width: 350px;
   border: 1px dashed black;
   font-weight: bold;
   padding: 10px;
   text-align: center;
 }
-.resume .container__cv i {
+.resume .container__cv i, .resume .container__cv--color i {
   height: 50px;
   color: black;
   font-size: 2.1rem;
   margin-left: 10px;
 }
-.resume .container__cv i:hover {
+.resume .container__cv i:hover, .resume .container__cv--color i:hover {
+  color: #428f75;
+}
+.resume .container__cv--color {
+  color: red;
+}
+.resume .container__cv--color p {
+  border-color: red;
+}
+.resume .container__cv--color i {
+  height: 50px;
+  color: black;
+  font-size: 2.1rem;
+  margin-left: 10px;
+}
+.resume .container__cv--color i:hover {
   color: #428f75;
 }
 
@@ -309,9 +333,6 @@ body {
   font-size: 1.7rem;
   margin-top: 12px;
 }
-.icons .icon__link .fa-brands.fa-github:hover {
-  color: rgb(168, 167, 167);
-}
 .icons .icon__link .fa-solid.fa-envelope:hover {
   color: red;
 }
@@ -509,7 +530,7 @@ body {
   .container__aboutMe .resume .container__aboutMe .resume__video {
     margin-top: 20px;
   }
-  .container__aboutMe .resume .container__cv {
+  .container__aboutMe .resume .container__cv, .container__aboutMe .resume .container__cv--color {
     margin-bottom: 20px;
     display: flex;
     align-items: center;

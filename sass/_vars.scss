@@ -2,3 +2,18 @@ $secondaryColor:#428f75;
 $toMdResponsive: 767px;
 $toXlResponsive:1200px;
 $subtitleColor:#68b89e;
+
+$coloresMedia: (
+    git_hub: rgb(168, 167, 167),
+    email:red,
+    linkedin:rgb(14, 128, 199),
+    );
+
+    @mixin btn {
+        display: inline-block;
+        padding: 10px 30px;
+        text-decoration: none;
+        font-family: sans-serif;
+        border-radius: 25px;
+        color: black;
+    }

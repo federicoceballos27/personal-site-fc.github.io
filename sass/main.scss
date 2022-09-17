@@ -16,13 +16,14 @@
             margin-top: 12px
         }
         .fa-brands.fa-github:hover{
-            color: rgb(168, 167, 167);
+            color: map-get($coloresMedia, git_hub);
         }
         .fa-solid.fa-envelope:hover{
-            color: red;
+            color: map-get($coloresMedia, email);
         }
         .fa-brands.fa-linkedin-in:hover{
-            color: rgb(14, 128, 199);
+            color: map-get($coloresMedia, linkedin);
+            // color: rgb(14, 128, 199);
         }
     }
 }
@@ -114,13 +115,13 @@ body{
             margin-top: 12px
         }
         .fa-brands.fa-github:hover{
-            color: rgb(168, 167, 167);
+            color: map-get($coloresMedia, github)
         }
         .fa-solid.fa-envelope:hover{
-            color: red;
+            color: map-get($coloresMedia, email)
         }
         .fa-brands.fa-linkedin-in:hover{
-            color: rgb(14, 128, 199);
+            color: map-get($coloresMedia, linkedin)
         }
     }
 }
