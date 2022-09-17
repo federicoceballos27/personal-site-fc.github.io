@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my website! My name is Federico Ceballos and here you can see my projects, work experience, my networks and much more! I invite you to meet me!">
+    <meta name="keywords" content="development, desarrollo, web, personal, website, portfolio, programmer, programming, resume, html, css, skills, webpage, developer, programador, frontend, backend, fullstack">
     <link rel="stylesheet" href="../sass/main.css">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <!-- <link rel="stylesheet" href="../css/media-queries.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Fredericka+the+Great&family=Lilita+One&family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>FC/ContactMe</title>
+    <title>FC | AboutMe</title>
 </head>
 <body>
-
+    
     <div class="container-grid">
 
         <header id="header">
@@ -32,22 +32,22 @@
                                 <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./aboutMe.html">AboutMe</a>
+                                <a class="nav-link active" href="#">AboutMe</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./mySkills.html">MySkills</a>
+                                <a class="nav-link" href="./my_skills.html">MySkills</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">ContactMe</a>
+                                <a class="nav-link" href="./contact_me.html">ContactMe</a>
                             </li>
                         </ul>
                         <div class="icons-nav">
                             <a class="icon__link" href="https://github.com/federicoceballos27" target="_blank"><i class="fa-brands fa-github"></i></a>
                             <a class="icon__link" href="mailto:ffedericoceballos@gmail.com" target="_blank" ><i class="fa-solid fa-envelope"></i></a>
-                            <a class="icon__link" href="www.linkedin.com/in/federicon-ceballos" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a class="icon__link" href="https://linkedin.com/in/federicon-ceballos" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -55,53 +55,43 @@
 
         </header>
 
-        <main id="main">
-
-            <h2 class="title__sub">ContactMe</h2>
+        <main id="main ">
             
-            <div class="container__contact animate__animated animate__zoomIn">
-                
-                <section class="formulario">
+            <h2 class="title__sub">AboutMe</h2>
+            
+            <div class="container__aboutMe">
+                <section class="me">
+                    <article class="me__txt animate__animated animate__zoomIn">
+                        <p><span class="first">I</span> would like to introduce myself; I am Federico Ceballos, I'm 27 years old and I have designed this website in order to show my work 
+                        to the world!</p>
+                        <p>I was born in Argentina, in the province of Cordoba where I'm currently living, although 
+                        I'm always traveling around the world and learning.
+                        Technologies always called my attention and in the last years I discovered my passion 
+                        for programming.</p>
+                        <p>I like to communicate and create ideas. Everything is better in a 
+                        team and always with a good attitude. I keep learning and training all the time to 
+                        become a great professional in the area, which is my goal! Always giving 100%!</p>
+                    </article>
+                </section>
+                <section class="resume">
+                    <article class="resume__video">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/Fm_M5rej3eU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
 
-                    <form class="form" action="#">
-                        <div class="mb-3 col-6">
-                            <label for="exampleFormControlInput1" class="form-label"><b>Keep in contact!</b></label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name Surname">
-                            <label for="exampleFormControlInput1" class="form-label mt-2"></label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3 col-8">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Tell me!"></textarea>
-                        </div>
-                        
-                        <p class="form__check">Do you want to receive my newsletter?</p>
-                                
-                        <label for="yes">
-                            <input type="radio" name="newsletter" value="yes" checked>Yes
-                        </label>
 
-                        <label for="no">
-                            <input type="radio" name="newsletter" value="no">No
-                        </label>
-
-                        <div class="btn-container">
-                            <button type="button" class="btn btn-outline-secondary">SUBMIT</button>
-                            <button type="button" class="btn btn-outline-secondary">CLEAR</button>
-                        </div>
-                    </form>
+                    <div class="container__cv animate__animated animate__zoomIn">
+                        <p>Resume (English)</p>
+                        <a href="../img/Resume Federico Ceballos.pdf" download><i class="fa-solid fa-file-arrow-down"></i></a>
+                    </div>
+                    <div class="container__cv animate__animated animate__zoomIn">
+                        <p>Resume (Spanish)</p> 
+                        <a href="../img/Resume Federico Ceballos.pdf" download><i class="fa-solid fa-file-arrow-down"></i></a>
+                    </div>
 
                 </section>
 
-                    <section class="map">
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.93388626844!2d-64.3344303707371!3d-31.399083974371262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1659920436732!5m2!1ses-419!2sar" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <h3>I AM HERE!</h3>
-
-                    </section>
-
-                </div>
-
+            </div>
+            
         </main>
 
         <aside id="socialMedia">
@@ -114,16 +104,17 @@
 
         </aside>
 
+
         <footer id="footer">
 
             <p class="copyright">©2022 FedericoCeballos</p>
 
         </footer>
-        
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> 
     <script src="https://kit.fontawesome.com/680d9b05eb.js" crossorigin="anonymous"></script>
 </body>
 </html>
