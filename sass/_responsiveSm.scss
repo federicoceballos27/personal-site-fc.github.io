@@ -4,7 +4,10 @@
 @media (max-width:767px) {
     #body{
         overflow:visible;
-        background-image: url("../img/background-sm.jpg");
+        background-image: url("../img/background-g23458254f_1280.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
     }
     
@@ -96,9 +99,13 @@
         }
         & &__paragraph{
             height: auto;
-            width: 60%;
+            width: 55%;
             font-size: 1.4rem;
             padding: 10px;
+            text-align: center;
+        }
+        & &__btn{
+            margin-left: 5%;
         }
     }
     

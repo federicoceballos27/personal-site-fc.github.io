@@ -18,6 +18,20 @@
   line-height: 1.9rem;
   margin-top: 10px;
 }
+.presentation .presentation__btn {
+  border: 2px solid #adb8b4;
+  display: inline-block;
+  margin-left: 30%;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+}
+.presentation .presentation__btn:hover {
+  background-color: #adb8b4;
+  transition: 0.2s ease;
+}
 
 /*AboutMe*/
 .container__aboutMe {
@@ -106,6 +120,7 @@
 }
 .containerSkills .education__certifications ul li {
   font-size: 1.2rem;
+  line-height: 2.1rem;
   padding: 2px;
 }
 .containerSkills .education__certifications ul li a {
@@ -203,7 +218,7 @@
 }
 .container__contact .formulario .form .btn-container {
   display: flex;
-  width: 30%;
+  width: 25%;
   justify-content: space-between;
   margin-top: 10px;
 }
@@ -350,7 +365,10 @@
 @media (max-width: 767px) {
   #body {
     overflow: visible;
-    background-image: url("../img/background-sm.jpg");
+    background-image: url("../img/background-g23458254f_1280.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
   }
   .container-grid {
@@ -427,9 +445,13 @@
   }
   .presentation .presentation__paragraph {
     height: auto;
-    width: 60%;
+    width: 55%;
     font-size: 1.4rem;
     padding: 10px;
+    text-align: center;
+  }
+  .presentation .presentation__btn {
+    margin-left: 5%;
   }
   /*AboutMe*/
   .title__sub {
@@ -574,6 +596,7 @@
   }
   .containerSkills .education__certifications ul li {
     font-size: 1.1rem;
+    line-height: 2rem;
     padding: 2px;
   }
   /*Portfolio*/
