@@ -15,20 +15,21 @@
             height: auto;
             p{ 
                 font-size: 1.3rem;
-                line-height: 1.3rem;
+                line-height: 1.7rem;
                 padding: 8px;
             }
         }
         &__certifications {
             h3{
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             text-decoration: underline;
             padding: 8px;
             }
             ul{
                 list-style-type:square;
                 li{
-                    padding: 8px;
+                    font-size: 1.2rem;
+                    padding: 2px;
                     a{
                         color: black;
                         &:hover{

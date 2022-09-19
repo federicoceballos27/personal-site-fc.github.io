@@ -23,7 +23,6 @@
         }
         .fa-brands.fa-linkedin-in:hover{
             color: map-get($coloresMedia, linkedin);
-            // color: rgb(14, 128, 199);
         }
     }
 }
@@ -36,6 +35,7 @@
     margin-left: 70px;
     position: relative;
     top: 62px;
+    text-decoration: underline;
 }
 
 /*First Letter pages*/
@@ -49,7 +49,7 @@
     box-sizing: border-box;
 }
 
-body{
+#body{
     background-image: url("../img/background-g23458254f_1280.jpg");
     background-size: cover;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
@@ -77,11 +77,23 @@ body{
             .nav-link{
                 font-size: 1.2rem;
                 color: black;
-                &:hover{
-                    color: $secondaryColor
+                position: relative;
+                margin: 0 15px;
+                &::before{
+                    content:"";
+                    height: 3px;
+                    width: 0%;
+                    background: $secondaryColor;
+                    position: absolute;
+                    left: 8px;
+                    bottom: 4px;
+                    transition: 0.4s ease-out;
                 }
-                &.active{
-                    color: $secondaryColor
+                &:hover::before{
+                    width: 85%;
+                }
+                &.active::before{
+                    width: 85%;
                 }
             }
             
@@ -115,7 +127,7 @@ body{
             margin-top: 12px
         }
         .fa-brands.fa-github:hover{
-            color: map-get($coloresMedia, github)
+            color: map-get($coloresMedia, git_hub)
         }
         .fa-solid.fa-envelope:hover{
             color: map-get($coloresMedia, email)

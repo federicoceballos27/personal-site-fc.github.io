@@ -15,16 +15,8 @@
   height: 25%;
   width: 45%;
   font-size: 1.3rem;
-  line-height: 1.3rem;
-}
-.presentation .presentation__paragraph .botonPrueba {
-  display: inline-block;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-family: sans-serif;
-  border-radius: 25px;
-  color: black;
-  background-color: grey;
+  line-height: 1.9rem;
+  margin-top: 10px;
 }
 
 /*AboutMe*/
@@ -57,44 +49,30 @@
 .resume .resume__video {
   height: 250px;
   width: 100%;
-  margin: 25px 0;
+  margin-top: 25px;
+  margin-bottom: 60px;
 }
-.resume .container__cv, .resume .container__cv--color {
+.resume .container__cv {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.resume .container__cv .parrafo, .resume .container__cv--color .parrafo, .resume .container__cv--color p {
+.resume .container__cv .parrafo {
   width: 350px;
   border: 1px dashed black;
   font-weight: bold;
   padding: 10px;
   text-align: center;
 }
-.resume .container__cv i, .resume .container__cv--color i {
+.resume .container__cv i {
   height: 50px;
   color: black;
   font-size: 2.1rem;
   margin-left: 10px;
 }
-.resume .container__cv i:hover, .resume .container__cv--color i:hover {
-  color: #428f75;
-}
-.resume .container__cv--color {
-  color: red;
-}
-.resume .container__cv--color p {
-  border-color: red;
-}
-.resume .container__cv--color i {
-  height: 50px;
-  color: black;
-  font-size: 2.1rem;
-  margin-left: 10px;
-}
-.resume .container__cv--color i:hover {
-  color: #428f75;
+.resume .container__cv i:hover {
+  color: #adb8b4;
 }
 
 /*MySkill*/
@@ -115,11 +93,11 @@
 }
 .containerSkills .education__description p {
   font-size: 1.3rem;
-  line-height: 1.3rem;
+  line-height: 1.7rem;
   padding: 8px;
 }
 .containerSkills .education__certifications h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-decoration: underline;
   padding: 8px;
 }
@@ -127,13 +105,14 @@
   list-style-type: square;
 }
 .containerSkills .education__certifications ul li {
-  padding: 8px;
+  font-size: 1.2rem;
+  padding: 2px;
 }
 .containerSkills .education__certifications ul li a {
   color: black;
 }
 .containerSkills .education__certifications ul li a:hover {
-  color: #428f75;
+  color: #adb8b4;
 }
 .containerSkills .skills {
   width: 50%;
@@ -189,13 +168,15 @@
 .containerPortfolio {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 30px;
 }
 .containerPortfolio .portfolioPresentation {
-  width: 90%;
-  line-height: 1.5rem;
-  margin-left: 80px;
+  width: 70%;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
   padding: 10px;
+  text-align: center;
 }
 
 .carousel-inner .carousel-item img {
@@ -261,6 +242,7 @@
   margin-left: 70px;
   position: relative;
   top: 62px;
+  text-decoration: underline;
 }
 
 /*First Letter pages*/
@@ -274,7 +256,7 @@
   box-sizing: border-box;
 }
 
-body {
+#body {
   background-image: url("../img/background-g23458254f_1280.jpg");
   background-size: cover;
   font-family: "Fira Sans Extra Condensed", sans-serif;
@@ -301,12 +283,24 @@ body {
 .navbar ul .nav-item .nav-link {
   font-size: 1.2rem;
   color: black;
+  position: relative;
+  margin: 0 15px;
 }
-.navbar ul .nav-item .nav-link:hover {
-  color: #428f75;
+.navbar ul .nav-item .nav-link::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #adb8b4;
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+  transition: 0.4s ease-out;
 }
-.navbar ul .nav-item .nav-link.active {
-  color: #428f75;
+.navbar ul .nav-item .nav-link:hover::before {
+  width: 85%;
+}
+.navbar ul .nav-item .nav-link.active::before {
+  width: 85%;
 }
 
 /*Main*/
@@ -333,6 +327,9 @@ body {
   font-size: 1.7rem;
   margin-top: 12px;
 }
+.icons .icon__link .fa-brands.fa-github:hover {
+  color: rgb(168, 167, 167);
+}
 .icons .icon__link .fa-solid.fa-envelope:hover {
   color: red;
 }
@@ -351,8 +348,10 @@ body {
 /*Responsive*/
 /*Screens for 375px to 767px*/
 @media (max-width: 767px) {
-  body {
+  #body {
     overflow: visible;
+    background-image: url("../img/background-sm.jpg");
+    background-size: cover;
   }
   .container-grid {
     display: flex;
@@ -364,7 +363,7 @@ body {
   #header {
     grid-column: 0;
     display: flex;
-    background: rgba(206, 227, 220, 0.9529411765);
+    background: #f6f8f7;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -372,6 +371,25 @@ body {
   }
   .navbar .navbar-collapse .navbar-nav {
     text-align: center;
+  }
+  .navbar ul .nav-item .nav-link {
+    margin: 0 15px;
+  }
+  .navbar ul .nav-item .nav-link::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #adb8b4;
+    position: absolute;
+    left: 42%;
+    bottom: 4px;
+    transition: 0.4s ease-out;
+  }
+  .navbar ul .nav-item .nav-link:hover::before {
+    width: 18%;
+  }
+  .navbar ul .nav-item .nav-link.active::before {
+    width: 18%;
   }
   .icons-nav {
     display: flex;
@@ -415,7 +433,6 @@ body {
   }
   /*AboutMe*/
   .title__sub {
-    color: #68b89e;
     display: flex;
     font-size: 1.5rem;
     margin-left: 20px;
@@ -520,8 +537,8 @@ body {
     width: 45%;
   }
   .container__aboutMe .me .me__txt p {
-    font-size: 1.3rem;
-    line-height: 1.3rem;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
   }
   .container__aboutMe .resume {
     width: 50%;
@@ -530,7 +547,7 @@ body {
   .container__aboutMe .resume .container__aboutMe .resume__video {
     margin-top: 20px;
   }
-  .container__aboutMe .resume .container__cv, .container__aboutMe .resume .container__cv--color {
+  .container__aboutMe .resume .container__cv {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -547,21 +564,24 @@ body {
     width: 60%;
   }
   .containerSkills .education__description p {
-    line-height: 1.2rem;
-    padding: 10px;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 5px;
   }
   .containerSkills .education__certifications h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 10px;
   }
   .containerSkills .education__certifications ul li {
-    padding: 5px;
+    font-size: 1.1rem;
+    padding: 2px;
   }
   /*Portfolio*/
   .containerPortfolio {
     margin-top: 20px;
   }
   .containerPortfolio .portfolioPresentation {
+    font-size: 1.1rem;
     line-height: 1.3rem;
     margin-left: 30px;
   }

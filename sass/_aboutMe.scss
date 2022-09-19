@@ -31,7 +31,8 @@
     & &__video{
         height: 250px;
         width: 100%;
-        margin: 25px 0
+        margin-top: 25px;
+        margin-bottom: 60px;
     }
     .container__cv{
         margin-bottom: 20px;
@@ -55,24 +56,5 @@
                 color: $secondaryColor;
             }
         }
-    }
-    
-    .container__cv--color{
-        @extend .container__cv;
-        color: red;
-        p{
-            @extend .parrafo;
-            border-color: red;
-        }
-        i{
-            height: 50px;
-            color: black;
-            font-size: 2.1rem;
-            margin-left: 10px;
-            &:hover{
-                color: $secondaryColor;
-            }
-        }
-
     }
 }

@@ -32,8 +32,8 @@
             width: 45%;
             .me__txt{
                 p{
-                font-size: 1.3rem;
-                line-height: 1.3rem;
+                font-size: 1.1rem;
+                line-height: 1.2rem;
                 }
             }
         }
@@ -62,18 +62,20 @@
             width: 60%;
             &__description{ 
                 p{
-                line-height: 1.2rem;
-                padding: 10px;
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+                padding: 5px;
                 }
             }
             &__certifications{
                 h3{
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 padding: 10px;
                 }
                 ul {
                     li{
-                    padding: 5px;
+                    font-size: 1.1rem;
+                    padding: 2px;
                     }
                 }
             }
@@ -84,6 +86,7 @@
     .containerPortfolio{
         margin-top: 20px;
         .portfolioPresentation{
+            font-size: 1.1rem;
             line-height: 1.3rem;
             margin-left: 30px;
         }

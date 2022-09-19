@@ -2,8 +2,10 @@
 
 /*Screens for 375px to 767px*/
 @media (max-width:767px) {
-    body{
+    #body{
         overflow:visible;
+        background-image: url("../img/background-sm.jpg");
+        background-size: cover;
     }
     
     .container-grid{
@@ -17,7 +19,7 @@
     #header{
         grid-column: 0;
         display: flex;
-        background: #cee3dcf3;
+        background: #f6f8f7;
         position: sticky;
         top: 0;
         z-index: 1;
@@ -25,6 +27,34 @@
 
     .navbar .navbar-collapse .navbar-nav{
         text-align: center;
+    }
+
+    .navbar{
+        ul{
+            .nav-item{
+                .nav-link{
+                    margin: 0 15px;
+                    &::before{
+                        content:"";
+                        height: 3px;
+                        width: 0%;
+                        background: $secondaryColor;
+                        position: absolute;
+                        left: 42%;
+                        bottom: 4px;
+                        transition: 0.4s ease-out;
+                    }
+                    &:hover::before{
+                        width: 18%;
+                    }
+                    
+                    &.active::before{
+                        width: 18%;
+                    }
+                }
+                
+            }
+        }
     }
 
     .icons-nav{
@@ -74,7 +104,6 @@
     
     /*AboutMe*/     
     .title__sub{
-        color: #68b89e;
         display: flex;
         font-size:1.5rem;
         margin-left: 20px;
