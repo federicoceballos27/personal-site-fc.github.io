@@ -77,7 +77,7 @@
     /*Footer*/
     #footer{
         grid-column:0;
-        height: 30px;
+        height: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -166,6 +166,15 @@
         .portfolioPresentation{
             width: 100%;
             margin-left: 0px;
+        }
+        .container{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        height: 300px;
+                    }
+                }
+            }
         }
     }
     

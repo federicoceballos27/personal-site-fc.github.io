@@ -50,7 +50,7 @@
   width: auto;
   padding: 10px;
   font-size: 1.3rem;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 
 .resume {
@@ -193,9 +193,17 @@
   padding: 10px;
   text-align: center;
 }
-
-.carousel-inner .carousel-item img {
-  height: 400px;
+.containerPortfolio .carousel-item img {
+  height: 380px;
+}
+.containerPortfolio .carousel-item a {
+  text-decoration: none;
+}
+.containerPortfolio .carousel-item a h5 {
+  color: white;
+}
+.containerPortfolio .carousel-item a h5:hover {
+  color: blue;
 }
 
 /*ContactMe*/
@@ -423,7 +431,7 @@
   /*Footer*/
   #footer {
     grid-column: 0;
-    height: 30px;
+    height: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -509,6 +517,9 @@
     width: 100%;
     margin-left: 0px;
   }
+  .containerPortfolio .container .carousel-inner .carousel-item img {
+    height: 300px;
+  }
   /*ContactMe*/
   .container__contact {
     flex-direction: column-reverse;
@@ -559,15 +570,14 @@
     width: 45%;
   }
   .container__aboutMe .me .me__txt p {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
   }
   .container__aboutMe .resume {
     width: 50%;
-    align-items: stretch;
   }
   .container__aboutMe .resume .container__aboutMe .resume__video {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .container__aboutMe .resume .container__cv {
     margin-bottom: 20px;
@@ -607,6 +617,10 @@
     font-size: 1.1rem;
     line-height: 1.3rem;
     margin-left: 30px;
+  }
+  .containerPortfolio .container .carousel-inner .carousel-item img {
+    height: 350px;
+    width: 100%;
   }
   /*ContactMe*/
   .container__contact {

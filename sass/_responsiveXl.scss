@@ -32,16 +32,15 @@
             width: 45%;
             .me__txt{
                 p{
-                font-size: 1.1rem;
-                line-height: 1.2rem;
+                font-size: 1.2rem;
+                line-height: 1.1rem;
                 }
             }
         }
         .resume{
             width: 50%;
-            align-items: stretch;
             & &__video{
-                margin-top: 20px;
+                margin-top: 0px;
             }
             .container__cv{
                 margin-bottom: 20px;
@@ -90,6 +89,16 @@
             font-size: 1.1rem;
             line-height: 1.3rem;
             margin-left: 30px;
+        }
+        .container{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        height: 350px;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 
