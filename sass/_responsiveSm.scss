@@ -1,7 +1,7 @@
 @import "vars";
 
 /*Screens for 375px to 767px*/
-@media (max-width:767px) {
+@media (max-width:$toMdResponsive) {
     #body{
         overflow:visible;
         background-image: url("../img/background-g23458254f_1280.jpg");

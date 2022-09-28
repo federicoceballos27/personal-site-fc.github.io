@@ -1,4 +1,3 @@
-/*Home*/
 .presentation {
   height: 100%;
   width: 100%;
@@ -33,7 +32,6 @@
   transition: 0.2s ease;
 }
 
-/*AboutMe*/
 .container__aboutMe {
   display: flex;
   justify-content: space-around;
@@ -89,7 +87,6 @@
   color: #adb8b4;
 }
 
-/*MySkill*/
 .containerSkills {
   height: auto;
   display: flex;
@@ -179,7 +176,6 @@
   margin: 0 10px;
 }
 
-/*Portfolio*/
 .containerPortfolio {
   display: flex;
   flex-direction: column;
@@ -193,20 +189,17 @@
   padding: 10px;
   text-align: center;
 }
-.containerPortfolio .carousel-item img {
-  height: 380px;
-}
 .containerPortfolio .carousel-item a {
   text-decoration: none;
 }
 .containerPortfolio .carousel-item a h5 {
   color: white;
+  text-decoration: underline;
 }
 .containerPortfolio .carousel-item a h5:hover {
   color: blue;
 }
 
-/*ContactMe*/
 .container__contact {
   display: flex;
   margin-top: 50px;
@@ -589,8 +582,9 @@
   .containerSkills {
     height: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .containerSkills .education {
     width: 60%;
@@ -618,8 +612,11 @@
     line-height: 1.3rem;
     margin-left: 30px;
   }
+  .containerPortfolio .container .carousel-inner .carousel-item {
+    height: 400px;
+  }
   .containerPortfolio .container .carousel-inner .carousel-item img {
-    height: 350px;
+    height: 100%;
     width: 100%;
   }
   /*ContactMe*/

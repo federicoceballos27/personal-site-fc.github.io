@@ -1,6 +1,5 @@
 @import "vars";
 
-/*Portfolio*/
 .containerPortfolio{
     display: flex;
     flex-direction: column;
@@ -14,13 +13,12 @@
         text-align: center;
     }
     .carousel-item{
-        img{
-            height: 380px;
-        }
+        
         a{
             text-decoration: none;
             h5{
                 color:white;
+                text-decoration:underline;
                 &:hover{
                 color: blue;
                 }
